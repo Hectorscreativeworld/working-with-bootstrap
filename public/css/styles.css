@@ -1,14 +1,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
-
-
 }
 
 h1 {
   font-family: 'Montserrat-Black';
   line-height: 1.5;
   font-size: 3.5rem;
-
 }
 
 h2 {
@@ -33,7 +30,7 @@ p {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -45,19 +42,16 @@ p {
   font-family: 'Ubuntu', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
-
 }
 
 .nav-item {
   padding: 0 18px;
-
 }
 
 .nav-link {
   font-size: 1.2rem;
   font-family: 'Montserrat-light';
 }
-
 
 /* Download Buttons */
 
@@ -70,11 +64,16 @@ p {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* Features Section */
 
 #features {
+  background-color: #fff;
+  position: relative;
+
   padding: 7% 15%;
 }
 
@@ -94,10 +93,9 @@ p {
 
 /* Testimonial Section */
 #testimonials {
-
   text-align: center;
   background-color: #ef8172;
-  color: #fff
+  color: #fff;
 }
 
 .testimonial-image {
@@ -119,4 +117,26 @@ p {
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
